@@ -5,7 +5,8 @@ Template.question_submit.events({
 
 		// insert into database
 		Questions.insert({
-			text: txt
+			text: txt,
+			author: Meteor.user().username
 		});
 
 		// clean up after ourselves
