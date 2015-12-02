@@ -1,4 +1,9 @@
 <template name="question_list">
 	<h3>List of Questions</h3>
-	
+
+	<ul>
+		{{#each questions}}
+			<li>{{text}}</li>
+		{{/each}}
+	</ul>
 </template>
